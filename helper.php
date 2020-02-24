@@ -7,18 +7,18 @@ class CustomFieldResolver {
         return "-subscriber->fieldValues not set-";
       }
 
-      $asd = array();
-      $customFieldLabel = 'alexcustomfield';
+      // $asd = array();
+      // $customFieldLabel = 'lead';
       foreach($subscriber->fieldValues as $fieldValue) {
-        $asd[] = $fieldValue->field->label;
-        $asd[] = '!_delim_!';
-        if (strtolower($fieldValue->field->label) == $customFieldLabel) {
+        // $asd[] = $fieldValue->field->label;
+        // $asd[] = '!_delim_!';
+        if ($fieldValue->field->label == 'LEADID') {
             return $fieldValue->value;
         }
       }
 
 
-      var_dump($asd);
+      // var_dump($asd);
     } catch (\Throwable $th) {
       return "-error-";
     }

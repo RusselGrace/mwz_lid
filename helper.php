@@ -10,7 +10,8 @@ class CustomFieldResolver {
       $asd = array();
       $customFieldLabel = 'alexcustomfield';
       foreach($subscriber->fieldValues as $fieldValue) {
-        $asd[] = $fieldValue->value;
+        $asd[] = $fieldValue->field->label;
+        $asd[] = '!_delim_!';
         if (strtolower($fieldValue->field->label) == $customFieldLabel) {
             return $fieldValue->value;
         }

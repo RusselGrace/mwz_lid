@@ -1,18 +1,23 @@
 <?php
 class CustomFieldResolver {
-  // MMTA-12 Investigate populating person zoho id on campaign bounced/unsubscribed pages
+  // 
   public static function getSubscriberCustomFieldValue($subscriber, $customFieldLabel) {
     try {
       if (!isset($subscriber->fieldValues)) {
         return "-subscriber->fieldValues not set-";
       }
 
-      $customFieldLabel = strtolower($customFieldLabel);
+      $asd = array();
+      $customFieldLabel = 'alexcustomfield';
       foreach($subscriber->fieldValues as $fieldValue) {
+        $asd[] = $fieldValue->value;
         if (strtolower($fieldValue->field->label) == $customFieldLabel) {
             return $fieldValue->value;
         }
       }
+
+
+      var_dump($asd);
     } catch (\Throwable $th) {
       return "-error-";
     }

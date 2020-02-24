@@ -12,7 +12,7 @@ class CustomFieldResolver {
       foreach($subscriber->fieldValues as $fieldValue) {
         // $asd[] = $fieldValue->field->label;
         // $asd[] = '!_delim_!';
-        if ($fieldValue->field->label == 'LEADID') {
+        if (strtolower($fieldValue->field->label) == strtolower('LEADID')) {
             return $fieldValue->value;
         }
       }

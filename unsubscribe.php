@@ -130,8 +130,8 @@ if ($viewCollection->renderContent) { ?>
                             'value' => '$data->dateAdded',
                         ),
                         array(
-                            'name'  => 'LEADID',
-                            'value' => 'CustomFieldResolver::getSubscriberCustomFieldValue($data->subscriber, "LEADID")',
+                            'name'  => 'Lead Id',
+                            'value' => 'CustomFieldResolver::getSubscriberCustomFieldValue($data->subscriber, "Lead Id")',
                         ),
                         array(
                             'class'     => 'CButtonColumn',

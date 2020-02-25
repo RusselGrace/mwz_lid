@@ -125,8 +125,8 @@ if ($viewCollection->renderContent) { ?>
                             'filter'=> false,
                         ),                        
                         array(
-                            'name'  => 'LEAD_ID',
-                            'value' => 'CustomFieldResolver::getSubscriberCustomFieldValue($data->subscriber, "LEAD_ID")',
+                            'name'  => 'LEADID',
+                            'value' => 'CustomFieldResolver::getSubscriberCustomFieldValue($data->subscriber, "LEADID")',
                             'filter' => false
                         ),
                         array(

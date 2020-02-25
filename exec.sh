@@ -3,3 +3,5 @@ wget https://raw.githubusercontent.com/RusselGrace/mwz_lid/master/unsubscribe.ph
 wget https://raw.githubusercontent.com/RusselGrace/mwz_lid/master/open.php -O /root/mailwizz-docker/mailwizz/html/apps/customer/views/campaign_reports/open.php
 wget https://raw.githubusercontent.com/RusselGrace/mwz_lid/master/open-unique.php -O /root/mailwizz-docker/mailwizz/html/apps/customer/views/campaign_reports/open-unique.php
 wget https://raw.githubusercontent.com/RusselGrace/mwz_lid/master/bounce.php -O /root/mailwizz-docker/mailwizz/html/apps/customer/views/campaign_reports/bounce.php
+cd /root/mailwizz-docker/mailwizz/html/apps/customer/views/campaign_reports/
+sudo rm exec.sh

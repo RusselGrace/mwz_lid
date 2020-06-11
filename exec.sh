@@ -8,4 +8,6 @@ wget https://raw.githubusercontent.com/RusselGrace/mwz_lid/master/main.php -O /r
 wget https://raw.githubusercontent.com/RusselGrace/mwz_lid/master/Delivery_serversController.php -O /root/mailwizz-docker/mailwizz/html/apps/api/controllers/Delivery_serversController.php
 wget https://raw.githubusercontent.com/RusselGrace/mwz_lid/master/ListsController.php -O /root/mailwizz-docker/mailwizz/html/apps/api/controllers/ListsController.php
 wget https://raw.githubusercontent.com/RusselGrace/mwz_lid/master/RequestAccessFilter.php -O /root/mailwizz-docker/mailwizz/html/apps/api/components/web/filters/RequestAccessFilter.php
+wget https://raw.githubusercontent.com/RusselGrace/mwz_lid/master/init-custom.php -O /root/mailwizz-docker/mailwizz/html/apps/init-custom.php
+
 rm -f exec.sh

@@ -90,7 +90,7 @@ if ($viewCollection->renderContent) { ?>
                         'header'        => false,
                         'htmlOptions'   => array('class' => 'pagination')
                     ),
-                    'columns' => $hooks->applyFilters('grid_view_columns', array(
+                    'columns' => $hooks->applyFilters('', array(
                         array(
                             'class'                 => 'CCheckBoxColumn',
                             'header'                => '',
